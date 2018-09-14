@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>教材申报系统登录</title>
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/jquery-2.1.4.js"></script>
+    <!-- 本页 -->
+    <script src="../js/gVerify.js"></script>
+    <link rel="stylesheet" href="../css/zhuce.css">
+</head>
+
+<body>
+    <div class="top1"></div>
+    <div class="content1">
+        <div class="content1_box content1_box_denglu">
+            <div class="denglu_box">
+                <p class="denglu_title">用户登录</p>
+                <div class="zhuce_inp">
+                    <span class="iconfont icon_ren">&#xe6c1;</span>
+                    <input class="zhuce_input zhuce_input1" type="text" placeholder="账号">
+                </div>
+                <div class="zhuce_inp">
+                    <span class="iconfont icon_ren">&#xe678;</span>
+                    <input class="zhuce_input zhuce_input1" type="password" placeholder="密码" >
+                </div>
+                <div class="zhuce_inp zhuce_inp_liang">
+                    <div class="zhuce_inp_left">
+                        <input class="zhuce_Linput" type="text" placeholder="图形验证码">
+                    </div>
+                    <a href="javascript:;" class="zhuce_inp_right">
+                        <div id="v_container" style="width: 100%;height: 100%;"></div>
+                        <!-- <input type="text" id="code_input" value="" placeholder="请输入验证码"/><button id="my_button">验证</button> -->
+                    </a>
+
+                </div>
+                <a href="javascript:;" class="zhuce_inp zhuce_zhuce">
+                    登录
+                </a>
+                <div class="zhuce_qudenglu">
+                    <a  href="javascript:;" class="denglu_wangji">忘记密码？</a>
+                    <a href="javascript:;" class="denglu_xinzhuce">注册新用户</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom"></div>
+</body>
+<script src="../js/common.js"></script>
+<script>
+        var verifyCode = new GVerify("v_container");
+        // verifyCode.validate(value) 判断验证码输入是否正确
+        
+</script>
+</html>

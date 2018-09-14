@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>申报进度</title>
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/jquery-2.1.4.js"></script>
+    <!-- 本页 -->
+    <link rel="stylesheet" href="../css/my_xiaoxi.css">
+</head>
+
+<body>
+    <div class="top2"></div>
+    <div class="centent2">
+        <div class="content2_box">
+            <div class="content2_box_top"></div>
+            <div class="my_xiaoxi">
+                <div class="my_declare_title">
+                    <span class="my_declare_left">
+                        <span class="iconfont icon_jilu">&#xe629;</span>
+                        <span class="icon_text">我的消息(<span> 5 </span>/<span> 10 </span>)</span>
+                    </span>
+                    <a class="jixu_shenbao" href="javascript:;">
+                        全部标记为已读
+                    </a>
+                </div>
+                <div class="my_xiaoxi_lists">
+                    <div class="my_xiaoxi_list">
+                        <div class="my_xiaoxi_top">
+                            <span class="yuandian"></span>
+                            <span class="gonggao">[公告]</span>
+                            <span class="tongzhi">《针灸治疗学》申报通过通知！</span>
+                            <span class="time">08月09日 09:23</span>
+                        </div>
+                        <div class="my_xiaoxi_text1">
+                            您的《针灸治疗学》序号45申报的教材已经通过，您已经被选定为主编职务，请您选择您的团队，《针灸治疗学》申请副主编，编委的共有15人， 请您在这15人里面选定副主编，编委职务。您的《针灸治疗学》序号45申报的教材已经通过，您已经被选定为主编职务，请您选择您的团队，《针灸治
+                            疗学》申请副主编，编委的共有15人，请您在这15人里面选定副主编，编委职务。您的《针灸治疗学》序号45申报的教材已经通过，您已经被选定为主 编职务，请您选择您的团队，《针灸治疗学》申请副主编，编委的共有15人，请您在这15人里面选定副主编，编委职编委的共有15人，请您在这15人里
+                            编委的共有15人，请您在这15人里面选定副主编，编委职编委的共有15人，请您在这15人里面选定副主编，编委职编委的共有15人，请您在这15人里面 选定副主编，编委职面选定副主编，编委职编委的共有15人，请您在这15人里面选定副主编，编委职
+                        </div>
+                        <div class="my_xiaoxi_text2">
+                            您的《针灸治疗学》序号45申报的教材已经通过，您已经被选定为主编职务，请您选择您的团队，《针灸治疗学》申请副主编，编委的共有15人， 请您在这15人里面选定副主编，编委职务。您的《针灸治疗学》序号45申报的教材已经通过，您已经被选定为主编职务，请您选择您的团队，《针灸治
+                            疗学》申请副主编，编委的共有15人，请您在这15人里面选定副主编，编委职务。您的《针灸治疗学》序号45申报的教材已经通过，您已经被选定为主 编职务，请您选择您的团队，《针灸治疗学》申请副主编，编委的共有15人，请您在这15人里面选定副主编，编委职编委的共有15人，请您在这15人里
+                            编委的共有15人，请您在这15人里面选定副主编，编委职编委的共有15人，请您在这15人里面选定副主编，编委职编委的共有15人，请您在这15人里面 选定副主编，编委职面选定副主编，编委职编委的共有15人，请您在这15人里面选定副主编，编委职
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom"></div>
+</body>
+<script src="../js/common.js"></script>
+<script>
+    window.onload = function () {
+        var height = window.innerHeight;
+        $(".my_xiaoxi").css({ "min-height": height - 337 - 66 + "px" })
+
+        var ind = 0;
+        $(".my_xiaoxi_text1").click(function(){
+            if(ind == 0){
+                var txt_heit = $(".my_xiaoxi_text2").height();
+                $(this).css({"height":txt_heit>100?txt_heit+"px":"100px","display":"block"})
+                $(this).parent().css({"height":txt_heit>100?txt_heit-0+74+"px":"174px"})
+                ind = 1;
+            }else{
+                $(this).css({"height":"100px","display":"-webkit-box"})
+                $(this).parent().css({"height":"174px"})
+                ind = 0;
+            }
+            
+        })
+    }
+</script>
+
+</html>

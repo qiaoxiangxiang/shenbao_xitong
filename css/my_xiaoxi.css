@@ -1,0 +1,98 @@
+.my_xiaoxi{
+    width: 1134px;
+    padding: 0 33px;
+    max-height: 1348px;
+    overflow: hidden;
+}
+.my_declare_title{
+    height: 53px;
+    line-height: 53px;
+    margin-top: 28px;
+    border-bottom: 1px solid #eaeaea;
+}
+.my_declare_left{
+    float: left;
+}
+.icon_jilu{
+    font-size: 20px;
+    color: #eb5524;
+    margin-left: 5px;
+}
+.icon_text{
+    font-size: 18px;
+    color: #333;
+}
+.icon_text span{
+    color: #eb5524;
+    font-size: 16px;
+}
+.jixu_shenbao{
+    float: right;
+    color: #0299ec;
+    font-size: 14px;
+    margin-right: 18px;
+}
+.my_xiaoxi_list{
+    width: 100%;
+    height: 174px;
+    background: rgba(233,86,43,.1);
+    position: relative;
+    overflow: hidden;
+    transition: all .5s;
+}
+.my_xiaoxi_top{
+    width: 936px;
+    height: 22px;
+    margin: 0 0 0 48px;
+    position: relative;
+    padding: 28px 0 12px;
+}
+.gonggao,.tongzhi,.time{
+    font-size: 16px;
+}
+.yuandian{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgb(233,86,43);
+    position: absolute;
+    left: -19px;
+    top: 37px;
+}
+.gonggao{
+    color: #333;
+}
+.tongzhi{
+    color: #eb5828;
+    margin: 0 59px 0 20px;
+}
+.time{
+    color: #a4a4a4;
+}
+.my_xiaoxi_text1{
+    width: 936px;
+    height: 100px;
+    margin: 0 0 0 48px;
+    font-size: 14px;
+    color: #999;
+    line-height: 26px;
+    text-indent: 2em;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; 
+    transition: all .5s;
+}
+.my_xiaoxi_text2{
+    width: 936px;
+    height: auto;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #999;
+    line-height: 26px;
+    text-indent: 2em;
+    display: none;
+}
+

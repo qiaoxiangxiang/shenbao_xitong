@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>教材申报系统注册页</title>
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/jquery-2.1.4.js"></script>
+    <!-- 本页引入 -->
+    <script src="../js/gVerify.js"></script>
+    <link rel="stylesheet" href="../css/zhuce.css">
+</head>
+
+<body>
+    <div class="app_body">
+        <div class="top1"></div>
+    </div>
+    <div class="content1">
+        <div class="content1_box">
+            <div class="content1_content">
+                <p class="zhuce_title">注册用户</p>
+                <!-- zhuce_border_color  框颜色 -->
+                <div class="zhuce_inp zhuce_border_color">
+                    <span class="iconfont  icon_ren">&#xe6c1;</span>
+                    <input class="zhuce_input zhuce_input1" type="text" placeholder="账号">
+                </div>
+                <p class="yonghuming">账号已经被注册使用</p>
+                <div class="zhuce_inp">
+                    <span class="iconfont icon_ren">&#xe600;</span>
+                    <input class="zhuce_input zhuce_input1" type="text" placeholder="手机号">
+                </div>
+                <div class="zhuce_inp zhuce_inp_liang">
+                    <div class="zhuce_inp_left">
+                        <input class="zhuce_Linput" type="text" placeholder="图形验证码">
+                    </div>
+                    <a href="javascript:;" class="zhuce_inp_right">
+                        <div id="v_container" style="width: 100%;height: 100%;"></div>
+                    </a>
+
+                </div>
+                <div class="zhuce_inp zhuce_inp_liang">
+                    <div class="zhuce_inp_bottom">
+                        <input class="zhuce_Linput" type="text" placeholder="短信验证码">
+                    </div>
+                    <a href="javascript:;" class="zhuce_inp_right zhuce_inp_font">
+                        获取验证码
+                    </a>
+
+                </div>
+                <div class="zhuce_inp">
+                    <span class="iconfont icon_ren">&#xe678;</span>
+                    <input class="zhuce_input zhuce_input1" type="password" placeholder="密码">
+                </div>
+                <div class="mima_Q_lists">
+                    <!-- mima_Q_list_background 背景色  -->
+                    <div class="mima_Q_list mima_Q_list_background">低</div>
+                    <div class="mima_Q_list mima_Q_list1">中</div>
+                    <div class="mima_Q_list">强</div>
+                </div>
+                <div class="zhuce_inp">
+                    <input class="zhuce_input zhuce_input1" type="text" placeholder="姓名">
+                </div>
+                <div class="zhuce_inp_radio">
+                    <span class="xingbie">性别</span>
+                    <div class="zhuce_xingbies">
+                            <span class="xingbie_radio"></span>
+                            <span class="mingshi">男</span>
+                    </div>
+                    <div class="zhuce_xingbies">
+                            <span class="xingbie_radio"></span>
+                            <span class="mingshi">女</span>
+                    </div>
+                </div>
+                <div class="zhuce_inp">
+                    <input class="zhuce_input zhuce_input1" type="text" placeholder="身份证号">
+                </div>
+                <div class="zhuce_inp">
+                    <input class="zhuce_input zhuce_input1" type="text" placeholder="院校名称">
+                </div>
+                <div class="zhuce_inp">
+                    <input class="zhuce_input zhuce_input1" type="text" placeholder="院系">
+                </div>
+                <div class="zhuce_inp">
+                    <input class="zhuce_input zhuce_input1" type="text" placeholder="职务">
+                </div>
+                <div class="zhuce_inp">
+                        <input class="zhuce_input zhuce_input1" type="text" placeholder="职称">
+                    </div>
+                <div class="zhuce_inp_radio">
+                        <span class="xingbie">教学名师</span>
+                        <div class="zhuce_mingshi">
+                                <span class="xingbie_radio"></span>
+                                <span class="mingshi">国家级</span>
+                        </div>
+                        <div class="zhuce_mingshi">
+                            <span class="xingbie_radio"></span>
+                            <span  class="mingshi">省级</span>
+                        </div>
+                        <div class="zhuce_mingshi">
+                            <span class="xingbie_radio"></span>
+                            <span class="mingshi">市级</span>
+                        </div>
+                        <div class="zhuce_mingshi">
+                            <span class="xingbie_radio"></span>
+                            <span class="mingshi">校级</span>
+                        </div>
+                    </div>
+                <div class="zhuce_inp">
+                    <input class="zhuce_input zhuce_input1" type="text" placeholder="通讯地址">
+                </div>
+                <div class="zhuce_inp">
+                    <input class="zhuce_input zhuce_input1" type="text" placeholder="邮编">
+                </div>
+                <div class="zhuce_inp">
+                    <input class="zhuce_input zhuce_input1" type="text" placeholder="住宅电话">
+                </div>
+                <div class="zhuce_inp">
+                    <input class="zhuce_input zhuce_input1" type="text" placeholder="办公电话">
+                </div>
+                <div class="zhuce_inp">
+                    <input class="zhuce_input zhuce_input1" type="text" placeholder="传真">
+                </div>
+                <div class="zhuce_inp">
+                    <input class="zhuce_input zhuce_input1" type="text" placeholder="E-mail">
+                </div>
+                <div class="zhuce_inp">
+                    <input class="zhuce_input zhuce_input1" type="text" placeholder="账号">
+                </div>
+                <div class="zhuce_tiaokuan">
+                    <span class="zhuce_fuwu">
+                        <span class="iconfont icon_duihao">&#xe67d;</span>
+                    </span>
+                    <span class="fuwu_size">
+                            我已经认真阅读并同意
+                        <a href="javascript:;" class="fuwu_color">《服务条款》</a>
+                    </span>
+                </div>
+                <a href="javascript:;" class="zhuce_inp zhuce_zhuce">
+                    注册
+                </a>
+                <div class="zhuce_qudenglu">
+                    <span>已有帐号？去</span>
+                    <a href="javascript:;" class="zhuce_qudenglu_txt">登陆</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom"></div>
+</body>
+<script src="../js/common.js"></script>
+<script>
+        var verifyCode = new GVerify("v_container");
+        // verifyCode.validate(value) 判断验证码输入是否正确
+        
+</script>
+
+</html>
