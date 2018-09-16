@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>申报进度</title>
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/jquery-2.1.4.js"></script>
+    <!-- 本页 -->
+    <link rel="stylesheet" href="../css/xuanze_tuandui.css">
+</head>
+
+<body>
+    <div class="top2"></div>
+    <div class="centent2">
+        <div class="content2_box">
+            <div class="content2_box_top"></div>
+            <div class="my_declare">
+                <div class="my_declare_title">
+                    <span class="my_declare_left">
+                        <span class="iconfont icon_jilu">&#xe604;</span>
+                        <span class="icon_text">选择团队</span>
+                    </span>
+                    <a class="jixu_shenbao" href="javascript:;">
+                        批量选中
+                    </a>
+                </div>
+                <table class="tab">
+                    <tr class="tab_tr_title">
+                        <td></td>
+                        <td class="xiangmu">专家姓名</td>
+                        <td class="mingcheng">所属院校</td>
+                        <td class="jieshao">申请职位</td>
+                        <td class="zhiwei">重新定位</td>
+                        <td class="zhuangtai">审核状态</td>
+                        <td class="caozuo">操作</td>
+                    </tr>
+                    <tr class="tab_tr">
+                        <td>
+                            <span class="tab_tr_span">
+                                <span class="iconfont icon_dui">&#xe67d;</span>
+                            </span>
+                        </td>
+                        <td>
+                            <span class="tab_tr_span">高树中</span>
+                        </td>
+                        <td>
+                            <span class="tab_tr_span">山东中医药大学</span>
+                        </td>
+                        <td>
+                            <span class="tab_tr_span">主编</span>
+                        </td>
+                        <!--  tab_tr_color 黄的 -->
+                        <td>
+                            <span class="tab_tr_span tab_tr_color">副主编</span>
+                        </td>
+                        <td>
+                            <span class="tab_tr_span">
+                                <!-- tongyi_show  隐藏 -->
+                                <a href="javascript:;" class="yijian">查看意见</a>
+                                <span class="tongyi tongyi_show">
+                                    已同意
+                                </span>
+                            </span>
+                        </td>
+                        <td>
+                            <span class="caozuo">
+                                <!-- caozuo_jin 灰色 -->
+                                <span class="chongxuan caozuo_jin">
+                                    <span class="iconfont icon_font icon_chongxuan">&#xe722;</span>
+                                    <span>重新定位</span>
+                                </span>
+                                <span class="dingwei caozuo_jin">
+                                    <span class="iconfont icon_font icon_dingwei">&#xe611;</span>
+                                    <span>选定</span>
+                                </span>
+                            </span>
+                        </td>
+                    </tr>
+                    
+                </table>
+                <div class="fenyeqi">
+                    <!-- fenyeqi_color  高亮 -->
+                    <a src="javascript:;" class="fenyeqi_ye baocun_background">保存</a>
+                    <a src="javascript:;" class="fenyeqi_ye">提交</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom"></div>
+</body>
+<script src="../js/common.js"></script>
+<script>
+    window.onload = function () {
+        var height = window.innerHeight;
+        $(".my_declare").css({ "min-height": height - 337 - 66 + "px" })
+        var array = [];
+        for (var i = 0; i < $(".tab_tr").length; i++) {
+            array.push({ 'show': 0 });
+        }
+
+
+        $(".tab_tr").on("click", ".icon_dui", function () {
+            var index = $(this).parent().parent().parent().index() - 1;
+            if (array[index].show == 0) {
+                $(this).css({ "background": "#ea4e1b", "border": "none" })
+                $(".tab_tr").eq(index).find(".dingwei").css({ "color": "#64baec" })
+                array[index].show = 1;
+            } else {
+                $(".tab_tr").eq(index).find(".dingwei").css({ "color": "#868686" })
+                $(this).css({ "background": "#fff", "border": "1px solid #d7d7d7" })
+                array[index].show = 0;
+            }
+        })
+
+        // 定位 1
+        $(".tab_tr .dingwei").click(function () {
+            var index = $(this).parent().parent().parent().index() - 1;
+            $(".tab_tr").eq(index).find(".icon_dui").css({ "background": "#ea4e1b", "border": "none" })
+            array[index].show = 1;
+            $(this).css({ "color": "#64baec" })
+            return false;
+        })
+        // 重选 0
+        $(".tab_tr .chongxuan").click(function () {
+            var index = $(this).parent().parent().parent().index() - 1;
+            $(".tab_tr").eq(index).find(".icon_dui").css({ "background": "#fff", "border": "1px solid #d7d7d7" })
+            array[index].show = 0;
+            $(".tab_tr").eq(index).find(".dingwei").css({ "color": "#868686" })
+            return false;
+        })
+    }
+</script>
+
+</html>

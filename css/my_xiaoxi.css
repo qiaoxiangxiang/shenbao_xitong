@@ -1,8 +1,8 @@
 .my_xiaoxi{
     width: 1134px;
-    padding: 0 33px;
+    padding: 0 33px 149px;
     max-height: 1348px;
-    overflow: hidden;
+    overflow: hidden; 
 }
 .my_declare_title{
     height: 53px;
@@ -39,6 +39,10 @@
     position: relative;
     overflow: hidden;
     transition: all .5s;
+    border-bottom: 1px solid #e5e5e5;
+}
+.my_xiaoxi_background{
+    background: #fff;
 }
 .my_xiaoxi_top{
     width: 936px;
@@ -71,6 +75,7 @@
     color: #a4a4a4;
 }
 .my_xiaoxi_text1{
+    position: relative;
     width: 936px;
     height: 100px;
     margin: 0 0 0 48px;
@@ -95,4 +100,38 @@
     text-indent: 2em;
     display: none;
 }
-
+.icon_cha{
+    font-size: 17px;
+    color: #ababab;
+    position: absolute;
+    right: 29px;
+    top: 74px;
+}
+.content_show{
+    position: absolute;
+    right: 22px;
+    bottom: 10px;
+}
+.icon_xia{
+    font-size: 28px;
+    color: #ababab;
+}
+.icon_shang{
+    font-size: 24px;
+    color: #0e9eed;
+    display: none;
+}
+.fixed_shang{
+    position: fixed;
+    right: 23px;
+    bottom: 95px;
+    text-align: center;
+    line-height: 63px;
+    font-size: 34px;
+    color: #fff;
+    background: #d8d8d8;
+    width: 63px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: all 1s;
+}
