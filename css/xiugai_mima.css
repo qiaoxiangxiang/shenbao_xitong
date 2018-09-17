@@ -1,0 +1,84 @@
+.content1_content {
+    width: 490px;
+    box-shadow: 0 0 0 #fff;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 29px auto 0;
+}
+.mima_Q_lists{
+    width: 410px;
+}
+.zhuce_inp {
+    width: 406px;
+}
+.mima_ul{
+    float: left;
+    width: 78px;
+    line-height: 48px;
+    font-size: 14px;
+    color: #333;
+}
+.mima_inp{
+    float: right;
+}
+.mima_span{
+    margin-bottom: 16px;
+    line-height: 50px;
+    text-align: right;
+    width: 68px;
+    padding-right: 10px;
+}
+.mima_ul .mima_span:nth-of-type(1){
+    margin-top: 18px;
+    margin-bottom: 59px;
+}
+
+.fenyeqi {
+    padding: 0px 0 32px;
+    height: 34px;
+    text-align: center;
+}
+.fenyeqi_ye {
+    width: 124px;
+    height: 34px;
+    border-radius: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 6px;
+    border: none;
+    background: #ea4e1b;
+    color: #fff;
+}
+.fenyeqi_baocun, .fenyeqi_sye {
+    margin-right: 78px;
+}
+.fenyeqi_sye, .fenyeqi_tijao {
+    border: 1px solid #0199ec;
+    background: #fff;
+    color: #0199ec;
+}
+.fenyeqi{
+    width: 408px;
+    margin-left: -27px;
+    padding-top: 24px;
+}
+
+.my_declare_title {
+    width: 1133px;
+    height: 53px;
+    line-height: 53px;
+    margin: 28px auto 0;
+    border-bottom: 1px solid #eaeaea;
+}
+.icon_text {
+    font-size: 18px;
+    color: #333;
+}
+.icon_jilu {
+    font-size: 20px;
+    color: #eb5524;
+    margin-left: 5px;
+}

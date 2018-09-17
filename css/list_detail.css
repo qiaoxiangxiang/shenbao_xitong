@@ -1,0 +1,90 @@
+.content1_box {
+    overflow: initial;
+}
+
+.tabBox_tem {
+    margin-bottom: 43px;
+}
+
+.fenyeqi {
+    padding: 37px 0 42px;
+    height: 34px;
+    text-align: center;
+    border-top: 1px solid #eaeaea;
+}
+
+.fenyeqi_ye {
+    display: inline-block;
+    width: 62px;
+    height: 27px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #999;
+    border-radius: 27px;
+    line-height: 27px;
+    text-align: center;
+    margin: 0 6px;
+}
+
+.fenyeqi .fenyeqi_color {
+    border: none;
+    background: #ea4e1b;
+    color: #fff;
+}
+
+.fenyeqi_num {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #999;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 6px;
+}
+
+.index_box_tongzhi {
+    padding: 20px 53px 53px;
+    box-shadow: 0 0 30px #e0e0e0;
+    margin-top: 64px;
+    position: relative;
+}
+
+.index_box_tongzhi_title {
+    font-size: 36px;
+    color: #fe0000;
+    line-height: 98px;
+    text-align: center;
+    border-bottom: 1px solid #fe0000;
+}
+
+.index_box_tongzhi_title2 {
+    font-size: 22px;
+    color: #242424;
+    line-height: 93px;
+    text-align: center;
+}
+
+.index_box_tongzhi_content {
+    font-size: 17px;
+    color: #545454;
+    line-height: 38px;
+}
+.look_detail{
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+    font-size: 16px;
+    color: #0078ff;
+}
+.icon_S{
+    font-size: 20px;
+}
+.icon_X{
+    font-size: 18px;
+}
+.icon_show{
+    display: none;
+}

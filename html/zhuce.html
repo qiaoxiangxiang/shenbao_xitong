@@ -63,15 +63,19 @@
                 <div class="zhuce_inp">
                     <input class="zhuce_input zhuce_input1" type="text" placeholder="姓名">
                 </div>
-                <div class="zhuce_inp_radio">
+                <div class="zhuce_inp_radio zhuce_inp_xingbie">
                     <span class="xingbie">性别</span>
-                    <div class="zhuce_xingbies">
-                            <span class="xingbie_radio"></span>
-                            <span class="mingshi">男</span>
-                    </div>
-                    <div class="zhuce_xingbies">
-                            <span class="xingbie_radio"></span>
-                            <span class="mingshi">女</span>
+                    <div class="radio_box">
+                            <div class="radio_list">
+                                <input id="check17" type="radio" checked="" name="PurchaseIdentity" value="">
+                                <label for="check17" style="border-color: rgb(234, 78, 27);"></label>
+                                <span style="color: rgb(255, 141, 64);">男</span>
+                            </div>
+                            <div class="radio_list">
+                                <input id="check18" type="radio" name="PurchaseIdentity" value="">
+                                <label for="check18"></label>
+                                <span>女</span>
+                            </div>
                     </div>
                 </div>
                 <div class="zhuce_inp">
@@ -87,27 +91,33 @@
                     <input class="zhuce_input zhuce_input1" type="text" placeholder="职务">
                 </div>
                 <div class="zhuce_inp">
-                        <input class="zhuce_input zhuce_input1" type="text" placeholder="职称">
+                    <input class="zhuce_input zhuce_input1" type="text" placeholder="职称">
+                </div>
+                <div class="zhuce_inp_radio zhuce_inp_mingshi">
+                    <span class="xingbie">教学名师</span>
+                    <div class="radio_box">
+                        <div class="radio_list">
+                            <input id="check17" type="radio" checked="" name="PurchaseIdentity" value="">
+                            <label for="check17" style="border-color: rgb(234, 78, 27);"></label>
+                            <span style="color: rgb(255, 141, 64);">国家级</span>
+                        </div>
+                        <div class="radio_list">
+                            <input id="check18" type="radio" name="PurchaseIdentity" value="">
+                            <label for="check18"></label>
+                            <span>省级</span>
+                        </div>
+                        <div class="radio_list">
+                            <input id="check19" type="radio" name="PurchaseIdentity" value="">
+                            <label for="check19"></label>
+                            <span>市级</span>
+                        </div>
+                        <div class="radio_list">
+                            <input id="check19" type="radio" name="PurchaseIdentity" value="">
+                            <label for="check19"></label>
+                            <span>校级</span>
+                        </div>
                     </div>
-                <div class="zhuce_inp_radio">
-                        <span class="xingbie">教学名师</span>
-                        <div class="zhuce_mingshi">
-                                <span class="xingbie_radio"></span>
-                                <span class="mingshi">国家级</span>
-                        </div>
-                        <div class="zhuce_mingshi">
-                            <span class="xingbie_radio"></span>
-                            <span  class="mingshi">省级</span>
-                        </div>
-                        <div class="zhuce_mingshi">
-                            <span class="xingbie_radio"></span>
-                            <span class="mingshi">市级</span>
-                        </div>
-                        <div class="zhuce_mingshi">
-                            <span class="xingbie_radio"></span>
-                            <span class="mingshi">校级</span>
-                        </div>
-                    </div>
+                </div>
                 <div class="zhuce_inp">
                     <input class="zhuce_input zhuce_input1" type="text" placeholder="通讯地址">
                 </div>
@@ -130,11 +140,10 @@
                     <input class="zhuce_input zhuce_input1" type="text" placeholder="账号">
                 </div>
                 <div class="zhuce_tiaokuan">
-                    <span class="zhuce_fuwu">
-                        <span class="iconfont icon_duihao">&#xe67d;</span>
-                    </span>
+                    <input type="checkbox" id="study"><label class="zhuce_fuwu" for="study"></label>
+                    
                     <span class="fuwu_size">
-                            我已经认真阅读并同意
+                        我已经认真阅读并同意
                         <a href="javascript:;" class="fuwu_color">《服务条款》</a>
                     </span>
                 </div>
@@ -152,9 +161,26 @@
 </body>
 <script src="../js/common.js"></script>
 <script>
-        var verifyCode = new GVerify("v_container");
+    var verifyCode = new GVerify("v_container");
         // verifyCode.validate(value) 判断验证码输入是否正确
-        
+    $(".zhuce_inp_mingshi .radio_list").eq(0).find("span").css({ "color": "#ff8d40" })
+    $(".zhuce_inp_mingshi .radio_list").eq(0).find("label").css({ "border-color": "#ea4e1b" })
+    $(".zhuce_inp_mingshi .radio_list label").click(function () {
+        $(this).parent().parent().find("span").css({ "color": "#b4b4b4" })
+        $(this).parent().parent().find("label").css({ "border-color": "#b4b4b4" })
+        $(this).siblings("span").css({ "color": "#ff8d40" })
+        $(this).css({ "border-color": "#ea4e1b" })
+    })
+
+    $(".zhuce_inp_xingbie .radio_list").eq(0).find("span").css({ "color": "#ff8d40" })
+    $(".zhuce_inp_xingbie .radio_list").eq(0).find("label").css({ "border-color": "#ea4e1b" })
+    $(".zhuce_inp_xingbie .radio_list label").click(function () {
+        $(this).parent().parent().find("span").css({ "color": "#b4b4b4" })
+        $(this).parent().parent().find("label").css({ "border-color": "#b4b4b4" })
+        $(this).siblings("span").css({ "color": "#ff8d40" })
+        $(this).css({ "border-color": "#ea4e1b" })
+    })
+    
 </script>
 
 </html>

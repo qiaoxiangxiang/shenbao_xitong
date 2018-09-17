@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>申报进度</title>
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/jquery-2.1.4.js"></script>
+    <!-- 本页 -->
+    <link rel="stylesheet" href="../css/zhuce.css">
+    <link rel="stylesheet" href="../css/xiugai_mima.css">
+</head>
+
+<body>
+    <div class="top2"></div>
+    <div class="centent2">
+        <div class="content2_box">
+            <div class="content2_box_top"></div>
+            <div class="my_declare">
+                <div class="my_declare_title">
+                    <span class="my_declare_left">
+                        <span class="iconfont icon_jilu">&#xe601;</span>
+                         <span class="icon_text">修改个人信息</span>
+                    </span>
+                </div>
+                <div class="content1_content">
+                    <ul class="mima_ul">
+                        <li class="mima_span">新密码:</li>
+                        <li class="mima_span">重复密码:</li>
+                        <li class="mima_span">院校名称:</li>
+                        <li class="mima_span">院系:</li>
+                        <li class="mima_span">职务:</li>
+                        <li class="mima_span">职称:</li>
+                        <li class="mima_span">教学名师:</li>
+                        <li class="mima_span">通讯地址:</li>
+                        <li class="mima_span">邮编:</li>
+                        <li class="mima_span">住宅电话:</li>
+                        <li class="mima_span">办公电话:</li>
+                        <li class="mima_span">传真:</li>
+                        <li class="mima_span">E-mail:</li>
+                    </ul>
+                    <div class="mima_inp">
+                        <div class="zhuce_inp">
+                            <input class="zhuce_input zhuce_input1" type="password" placeholder="密码">
+                        </div>
+                        <div class="mima_Q_lists">
+                            <!-- mima_Q_list_background 背景色  -->
+                            <div class="mima_Q_list mima_Q_list_background">低</div>
+                            <div class="mima_Q_list mima_Q_list1">中</div>
+                            <div class="mima_Q_list">强</div>
+                        </div>
+                        <div class="zhuce_inp">
+                            <input class="zhuce_input zhuce_input1" type="password" placeholder="密码">
+                        </div>
+                        <div class="zhuce_inp">
+                            <input class="zhuce_input zhuce_input1" type="text" placeholder="院校名称">
+                        </div>
+                        <div class="zhuce_inp">
+                            <input class="zhuce_input zhuce_input1" type="text" placeholder="院系">
+                        </div>
+                        <div class="zhuce_inp">
+                            <input class="zhuce_input zhuce_input1" type="text" placeholder="职务">
+                        </div>
+                        <div class="zhuce_inp">
+                            <input class="zhuce_input zhuce_input1" type="text" placeholder="职称">
+                        </div>
+                        <div class="zhuce_inp_radio zhuce_inp_mingshi">
+                            <div class="radio_box">
+                                <div class="radio_list">
+                                    <input id="check17" type="radio" checked="" name="PurchaseIdentity" value="">
+                                    <label for="check17" style="border-color: rgb(234, 78, 27);"></label>
+                                    <span style="color: rgb(255, 141, 64);">国家级</span>
+                                </div>
+                                <div class="radio_list">
+                                    <input id="check18" type="radio" name="PurchaseIdentity" value="">
+                                    <label for="check18"></label>
+                                    <span>省级</span>
+                                </div>
+                                <div class="radio_list">
+                                    <input id="check19" type="radio" name="PurchaseIdentity" value="">
+                                    <label for="check19"></label>
+                                    <span>市级</span>
+                                </div>
+                                <div class="radio_list">
+                                    <input id="check19" type="radio" name="PurchaseIdentity" value="">
+                                    <label for="check19"></label>
+                                    <span>校级</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zhuce_inp">
+                            <input class="zhuce_input zhuce_input1" type="text" placeholder="通讯地址">
+                        </div>
+                        <div class="zhuce_inp">
+                            <input class="zhuce_input zhuce_input1" type="text" placeholder="邮编">
+                        </div>
+                        <div class="zhuce_inp">
+                            <input class="zhuce_input zhuce_input1" type="text" placeholder="住宅电话">
+                        </div>
+                        <div class="zhuce_inp">
+                            <input class="zhuce_input zhuce_input1" type="text" placeholder="办公电话">
+                        </div>
+                        <div class="zhuce_inp">
+                            <input class="zhuce_input zhuce_input1" type="text" placeholder="传真">
+                        </div>
+                        <div class="zhuce_inp">
+                            <input class="zhuce_input zhuce_input1" type="text" placeholder="E-mail">
+                        </div>
+                        <div class="fenyeqi">
+                            <a href="./fill_form.html" class="fenyeqi_ye fenyeqi_sye">上一页</a>
+                            <a href="javascript:;" class="fenyeqi_ye">下一页</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom"></div>
+</body>
+<script src="../js/common.js"></script>
+<script>
+    $(".zhuce_inp_mingshi .radio_list").eq(0).find("span").css({ "color": "#ff8d40" })
+    $(".zhuce_inp_mingshi .radio_list").eq(0).find("label").css({ "border-color": "#ea4e1b" })
+    $(".zhuce_inp_mingshi .radio_list label").click(function () {
+        $(this).parent().parent().find("span").css({ "color": "#b4b4b4" })
+        $(this).parent().parent().find("label").css({ "border-color": "#b4b4b4" })
+        $(this).siblings("span").css({ "color": "#ff8d40" })
+        $(this).css({ "border-color": "#ea4e1b" })
+    })
+</script>
+
+</html>

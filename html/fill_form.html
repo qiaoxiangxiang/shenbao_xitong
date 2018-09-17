@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>申报进度</title>
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/jquery-2.1.4.js"></script>
+    <!-- 本页 -->
+    <link rel="stylesheet" href="../css/my_daclare.css">
+    <link rel="stylesheet" href="../css/fill_form.css">
+</head>
+
+<body>
+    <div class="top2"></div>
+    <div class="centent2">
+        <div class="content2_box">
+            <div class="content2_box_top"></div>
+            <div class="my_declare">
+                <div class="my_declare_title">
+                    <span class="my_declare_left">
+                        <span class="iconfont icon_jilu">&#xe761;</span>
+                        <span class="icon_text">填写申报表</span>
+                    </span>
+                </div>
+                <div class="form_content">
+                    <div class="form_jindus">
+                        <!-- form_jindu_color  进度高亮 -->
+                        <div class="form_jindu form_jindu_left form_jindu_color">
+                            <span class="iconfont icon_yuanxiao">&#xe63f;</span>
+                            <span class="form_jindu_txt">院校信息</span>
+                        </div>
+                        <div class="form_jindu form_jindu_center">
+                            <span class="iconfont icon_gongauo">&#xe63b;</span>
+                            <span class="form_jindu_txt">工作、教学信息</span>
+                        </div>
+                        <div class="form_jindu form_jindu_right">
+                            <span class="iconfont icon_xinxi">&#xe62e;</span>
+                            <span class="form_jindu_txt">教材编写信息</span>
+                        </div>
+                    </div>
+                    <div class="form_contents">
+                        <div class="form_list">
+                            <div class="form_name_inp">
+                                <p class="form_name_title">拟申报教材名称及总序号：</p>
+                                <input type="text">
+                            </div>
+                            <div class="form_name_radio">
+                                <p class="form_name_title1">拟申报</p>
+                                <div class="radio_box">
+                                    <div class="radio_list">
+                                        <input id="check17" type="radio" checked name="PurchaseIdentity" value="">
+                                        <label for="check17"></label>
+                                        <span>主编</span>
+                                    </div>
+                                    <div class="radio_list">
+                                        <input id="check18" type="radio" name="PurchaseIdentity" value="">
+                                        <label for="check18"></label>
+                                        <span>副主编</span>
+                                    </div>
+                                    <div class="radio_list">
+                                        <input id="check19" type="radio" name="PurchaseIdentity" value="">
+                                        <label for="check19"></label>
+                                        <span>编委</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_list">
+                            <div class="form_name_inp">
+                                <p class="form_name_title">学校任职情况：</p>
+                                <textarea class="form_qing_txt"></textarea>
+                            </div>
+                        </div>
+                        <div class="form_list">
+                            <p class="form_name_title">所在院校该学科课程的建设与发展情况：</p>
+                            <div class="form_fazhan_list form_fazhan_list1">
+                                <span class="form_fazhan">重点学科名称:</span>
+                                <input type="text" class="form_fazhan_inp1">
+                                <span class="form_fazhan">带头人姓名:</span>
+                                <input type="text" class="form_fazhan_inp1">
+                                <div class="radio_box">
+                                    <div class="radio_list">
+                                        <input id="check17" type="radio" checked name="PurchaseIdentity" value="">
+                                        <label for="check17"></label>
+                                        <span>国家级</span>
+                                    </div>
+                                    <div class="radio_list">
+                                        <input id="check18" type="radio" name="PurchaseIdentity" value="">
+                                        <label for="check18"></label>
+                                        <span>省级</span>
+                                    </div>
+                                    <div class="radio_list">
+                                        <input id="check19" type="radio" name="PurchaseIdentity" value="">
+                                        <label for="check19"></label>
+                                        <span>校级</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_fazhan_list form_fazhan_list2">
+                                <span class="form_fazhan">精品课程名称:</span>
+                                <input type="text" class="form_fazhan_inp1">
+                                <span class="form_fazhan">负责人姓名:</span>
+                                <input type="text" class="form_fazhan_inp1">
+                                <div class="radio_box">
+                                    <div class="radio_list">
+                                        <input id="check17" type="radio" checked name="PurchaseIdentity" value="">
+                                        <label for="check17"></label>
+                                        <span>国家级</span>
+                                    </div>
+                                    <div class="radio_list">
+                                        <input id="check18" type="radio" name="PurchaseIdentity" value="">
+                                        <label for="check18"></label>
+                                        <span>省级</span>
+                                    </div>
+                                    <div class="radio_list">
+                                        <input id="check19" type="radio" name="PurchaseIdentity" value="">
+                                        <label for="check19"></label>
+                                        <span>校级</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_fazhan_list form_fazhan_list3">
+                                <span class="form_fazhan">特色专业名称:</span>
+                                <input type="text" class="form_fazhan_inp1">
+                                <span class="form_fazhan">负责人姓名:</span>
+                                <input type="text" class="form_fazhan_inp1">
+                                <div class="radio_box">
+                                    <div class="radio_list">
+                                        <input id="check17" type="radio" checked name="PurchaseIdentity" value="">
+                                        <label for="check17"></label>
+                                        <span>国家级</span>
+                                    </div>
+                                    <div class="radio_list">
+                                        <input id="check18" type="radio" name="PurchaseIdentity" value="">
+                                        <label for="check18"></label>
+                                        <span>省级</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_fazhan_list form_fazhan_list4">
+                                <span class="form_fazhan">教学团队名称:</span>
+                                <input type="text" class="form_fazhan_inp1">
+                                <span class="form_fazhan">带头人姓名:</span>
+                                <input type="text" class="form_fazhan_inp1">
+                                <div class="radio_box">
+                                    <div class="radio_list">
+                                        <input id="check17" type="radio" checked name="PurchaseIdentity" value="">
+                                        <label for="check17"></label>
+                                        <span>国家级</span>
+                                    </div>
+                                    <div class="radio_list">
+                                        <input id="check18" type="radio" name="PurchaseIdentity" value="">
+                                        <label for="check18"></label>
+                                        <span>省级</span>
+                                    </div>
+                                    <div class="radio_list">
+                                        <input id="check19" type="radio" name="PurchaseIdentity" value="">
+                                        <label for="check19"></label>
+                                        <span>校级</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_fazhan_list form_fazhan_list5">
+                                <span class="form_fazhan">实验示范中心名称:</span>
+                                <input type="text" class="form_fazhan_inp1">
+                                <span class="form_fazhan">负责人姓名:</span>
+                                <input type="text" class="form_fazhan_inp1">
+                                <div class="radio_box">
+                                    <div class="radio_list">
+                                        <input id="check17" type="radio" checked name="PurchaseIdentity" value="">
+                                        <label for="check17"></label>
+                                        <span>国家级</span>
+                                    </div>
+                                    <div class="radio_list">
+                                        <input id="check18" type="radio" name="PurchaseIdentity" value="">
+                                        <label for="check18"></label>
+                                        <span>省级</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_list">
+                            <div class="form_name_inp">
+                                <p class="form_name_title">所在院校目前开设本课程及使用教材情况（包括开设专业、年均学生数、使用教材的版本）:</p>
+                                <textarea class="form_qing_txt"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="fenyeqi">
+                    <a href="./fill_form2.html" class="fenyeqi_ye">下一页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom"></div>
+</body>
+<script src="../js/common.js"></script>
+<script>
+    // for(var i=0;i<$(".form_name_radio .radio_list").length;i++){
+
+    // }
+    $(".form_name_radio .radio_list").eq(0).find("span").css({ "color": "#ff8d40" })
+    $(".form_name_radio .radio_list").eq(0).find("label").css({ "border-color": "#ea4e1b" })
+    $(".form_name_radio .radio_list label").click(function () {
+        $(this).parent().parent().find("span").css({ "color": "#b4b4b4" })
+        $(this).parent().parent().find("label").css({ "border-color": "#b4b4b4" })
+        $(this).siblings("span").css({ "color": "#ff8d40" })
+        $(this).css({ "border-color": "#ea4e1b" })
+    })
+
+
+    $(".form_fazhan_list1 .radio_list").eq(0).find("span").css({ "color": "#ff8d40" })
+    $(".form_fazhan_list1 .radio_list").eq(0).find("label").css({ "border-color": "#ea4e1b" })
+    $(".form_fazhan_list1 .radio_list label").click(function () {
+        $(this).parent().parent().find("span").css({ "color": "#b4b4b4" })
+        $(this).parent().parent().find("label").css({ "border-color": "#b4b4b4" })
+        $(this).siblings("span").css({ "color": "#ff8d40" })
+        $(this).css({ "border-color": "#ea4e1b" })
+    })
+
+    $(".form_fazhan_list2 .radio_list").eq(0).find("span").css({ "color": "#ff8d40" })
+    $(".form_fazhan_list2 .radio_list").eq(0).find("label").css({ "border-color": "#ea4e1b" })
+    $(".form_fazhan_list2 .radio_list label").click(function () {
+        $(this).parent().parent().find("span").css({ "color": "#b4b4b4" })
+        $(this).parent().parent().find("label").css({ "border-color": "#b4b4b4" })
+        $(this).siblings("span").css({ "color": "#ff8d40" })
+        $(this).css({ "border-color": "#ea4e1b" })
+    })
+
+    $(".form_fazhan_list3 .radio_list").eq(0).find("span").css({ "color": "#ff8d40" })
+    $(".form_fazhan_list3 .radio_list").eq(0).find("label").css({ "border-color": "#ea4e1b" })
+    $(".form_fazhan_list3 .radio_list label").click(function () {
+        $(this).parent().parent().find("span").css({ "color": "#b4b4b4" })
+        $(this).parent().parent().find("label").css({ "border-color": "#b4b4b4" })
+        $(this).siblings("span").css({ "color": "#ff8d40" })
+        $(this).css({ "border-color": "#ea4e1b" })
+    })
+
+    $(".form_fazhan_list4 .radio_list").eq(0).find("span").css({ "color": "#ff8d40" })
+    $(".form_fazhan_list4 .radio_list").eq(0).find("label").css({ "border-color": "#ea4e1b" })
+    $(".form_fazhan_list4 .radio_list label").click(function () {
+        $(this).parent().parent().find("span").css({ "color": "#b4b4b4" })
+        $(this).parent().parent().find("label").css({ "border-color": "#b4b4b4" })
+        $(this).siblings("span").css({ "color": "#ff8d40" })
+        $(this).css({ "border-color": "#ea4e1b" })
+    })
+
+    $(".form_fazhan_list5 .radio_list").eq(0).find("span").css({ "color": "#ff8d40" })
+    $(".form_fazhan_list5 .radio_list").eq(0).find("label").css({ "border-color": "#ea4e1b" })
+    $(".form_fazhan_list5 .radio_list label").click(function () {
+        $(this).parent().parent().find("span").css({ "color": "#b4b4b4" })
+        $(this).parent().parent().find("label").css({ "border-color": "#b4b4b4" })
+        $(this).siblings("span").css({ "color": "#ff8d40" })
+        $(this).css({ "border-color": "#ea4e1b" })
+    })
+</script>
+
+</html>
